@@ -51,7 +51,41 @@ public class CalculatorTest {
 			int actual = cal.add(a, b);
 			
 			int expected = 9999;
-			assertEquals (expected, actual);
+			assertEquals (9999, actual);
 			
 	}
+	@Test
+	public void boundary() {
+		//fail("Not yet implemented");
+		int a = 0; 
+		int b = 0;
+		
+		Calculator cal = new Calculator();
+		int actual = cal.add(a, b);
+		int expected = -0;
+		assertEquals (0, actual);
+	}
+	@Test
+	public void divide() {
+		//fail("Not yet implemented");
+		int a = 10; 
+		int b = 2;
+		
+		Calculator cal = new Calculator();
+		cal.divide(a, b);
+		int expected = 5;
+		assertEquals (5, expected);
 }
+	@Test
+	public void multiply() {
+		//fail("Not yet implemented");
+		int a = 3; 
+		int b = 3;
+		
+		Calculator cal = new Calculator();
+		int actual = cal.multiply(a, b);
+		int expected = 9;
+		assertEquals (9, expected);
+	
+}
+	}
